@@ -10,7 +10,8 @@ public class Adder {
     private String inFile, outFile;
 
     public Adder(String inFile, String outFile) {
-
+        this.inFile = inFile;
+        this.outFile = outFile;
     }
     public void doAdd() throws IOException {
         int total = 0;
