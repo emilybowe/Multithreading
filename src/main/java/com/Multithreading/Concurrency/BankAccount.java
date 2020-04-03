@@ -12,4 +12,8 @@ public class BankAccount {
     public synchronized void deposit(int amount) {
         balance += amount;
     }
+
+    public synchronized void withdrawal(int amount) {
+        balance -= amount;
+    }
 }
