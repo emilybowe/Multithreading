@@ -3,13 +3,13 @@ package com.Multithreading.Concurrency;
 public class BankAccount {
     private int balance;
 
-    BankAccount(int startBalance) {
+    BankAccount(int startBalance) { //never mark constructors as synchronized
         this.balance = startBalance;
     }
-    public int getBalance() {
+    public synchronized int getBalance() {
         return balance;
     }
-    public void deposit(int amount) {
+    public synchronized void deposit(int amount) {
         balance += amount;
     }
 }
